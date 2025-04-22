@@ -3,7 +3,7 @@ import { Stack } from "expo-router";
 export default function RootLayout() {
   return (
   <Stack>
-    <Stack.Screen name= "index" options={{title: "Teste"}} />
+    <Stack.Screen name= "index" options={{title: "Organização da Loja"}} />
   </Stack>
   );
 }
