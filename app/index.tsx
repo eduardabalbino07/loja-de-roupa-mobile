@@ -4,13 +4,13 @@ export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-       <View style={styles.inputContainer}>
+       <View style={styles.title}>
         <Text style={styles.title}>Crie sua Conta</Text>
         
-        <View style={styles.inputs}>
-        <TextInput style={styles.inputs} placeholder={'Nome Completo'}/>
-        <TextInput style={styles.inputs} placeholder={'Email'}/>
-        <TextInput style={styles.inputs} placeholder={'Senha'} secureTextEntry={true}/></View>
+        <View style={styles.input}>
+        <TextInput style={styles.inputNome} placeholder={'Nome Completo'}/>
+        <TextInput style={styles.inputEmail} placeholder={'Email'}/>
+        <TextInput style={styles.inputSenha} placeholder={'Senha'} secureTextEntry={true}/></View>
 
          <TouchableOpacity style={styles.button} onPress={() => alert("Conta criada!")}>
           <Text style={styles.buttonText}>Criar Conta</Text>
@@ -41,16 +41,7 @@ const styles = StyleSheet.create({
     padding: 8,  
     marginBottom: 15,
   },
-  subtitle: {
-    fontSize: 26,
-    color: "#dbd3d3ff",
-    borderWidth: 2,
-    borderColor: "#fff",
-    padding: 8,  
-    marginBottom: 15,
-    borderRadius: 6,
-  },
-
+  
   button: {
     marginTop: 30,
     backgroundColor: "#B185BD",
@@ -60,6 +51,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderWidth: 2,
     borderColor: "#fff",
+    
   },
   buttonText: {
     color: "#fff",
@@ -67,16 +59,39 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 
-inputs: {
-      borderWidth: 2,
-      borderColor: '#fff', 
-      marginBottom: 15,
-      width: 200,
-      paddingHorizontal: 20,
-     
-    },
-inputContainer: {
-    alignItems: "center",
-  }
+  input: {
+  alignItems: "center",
+  justifyContent: "center",
+  marginTop: 20,
+  },
+
+  inputNome: {
+    fontSize: 20,
+    marginBottom: 15,
+    width: 250,
+    padding: 10,
+    borderWidth: 2,
+    borderColor: '#fff',
+    borderRadius: 8,
+    
+  },
+  inputEmail: {
+    fontSize: 20,
+    marginBottom: 15,
+    width: 250,
+    padding: 10,
+    borderWidth: 2,
+    borderColor: '#fff',
+    borderRadius: 8,
+  },
+  inputSenha: {
+    fontSize: 20,
+    marginBottom: 25,
+    width: 250,
+    padding: 10,
+    borderWidth: 2,
+    borderColor: '#fff',
+    borderRadius: 8,
+  },
 
 });
