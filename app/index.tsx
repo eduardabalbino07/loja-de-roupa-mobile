@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity, TextInput} from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity, TextInput, NavigationContainer} from '@react-navigation/native';
 
 export default function Page() {
   return (
@@ -15,6 +15,14 @@ export default function Page() {
          <TouchableOpacity style={styles.button} onPress={() => alert("Conta criada!")}>
           <Text style={styles.buttonText}>Criar Conta</Text>
         </TouchableOpacity>
+
+        return (
+		<NavigationContainer>
+			<App />
+		</NavigationContainer>
+	);
+}
+
 		</View>
   </View>
  </View>
@@ -73,6 +81,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#fff',
     borderRadius: 8,
+    color: '#4d4848ff',
     
   },
   inputEmail: {
@@ -83,6 +92,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#fff',
     borderRadius: 8,
+    color: '#4d4848ff',
   },
   inputSenha: {
     fontSize: 20,
@@ -92,6 +102,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#fff',
     borderRadius: 8,
+    color: '#4d4848ff',
   },
 
 });
