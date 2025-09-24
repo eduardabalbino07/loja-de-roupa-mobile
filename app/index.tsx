@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity, TextInput, NavigationContainer} from '@react-navigation/native';
+import { StyleSheet, Text, View, TouchableOpacity, TextInput} from 'react-native';
 
 export default function Page() {
   return (
@@ -15,13 +15,6 @@ export default function Page() {
          <TouchableOpacity style={styles.button} onPress={() => alert("Conta criada!")}>
           <Text style={styles.buttonText}>Criar Conta</Text>
         </TouchableOpacity>
-
-        return (
-		<NavigationContainer>
-			<App />
-		</NavigationContainer>
-	);
-}
 
 		</View>
   </View>

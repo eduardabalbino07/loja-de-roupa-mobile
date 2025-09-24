@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, NavigationContainer} from '@react-navigation/native';
+import { StyleSheet, Text, View} from 'react-native';
 
 export default function TelaInicial() {
   return (
@@ -7,18 +7,6 @@ export default function TelaInicial() {
        <View style={styles.title}>
         <Text style={styles.title}>Itens</Text>
          <Text style={styles.title}>Estoque</Text>
-
-    <NavigationContainer>
-	    <App />
-	</NavigationContainer>
-
-    function App() {
-	return (
-	<View>
-	    <Text>Tela de Inicio</Text>
-	</View>
-	);
-}
         
     </View>
   </View>
