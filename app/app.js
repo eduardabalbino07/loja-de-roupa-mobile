@@ -1,26 +1,19 @@
- import { NavigationContainer } from '@react-navigation/native';
- import { createNativeStackNavigator } from '@react-navigation/native-stack';
- import Home from "./screens/Home";
- import Inicio from "./screens/Inicio";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react';
+import CriarConta from '../app/telaCriarConta/index.js';
 
+const YourApp = () => {
+  const Stack = createNativeStackNavigator();
 
- const Stack = createNativeStackNavigator();
-
-
- function MinhaPilha(){
-  return (
-    <Stack.Navigator initialRouteName="Home">
-     <Stack.Screen name="Home" component={Home} />
-    <Stack.Screen name="Inicio" component={Inicio} />
-    </Stack.Navigator>
-  );
- }
-
-
- export default function MeuApp() {
   return (
     <NavigationContainer>
-      <MinhaPilha />
+      <Stack.Navigator>
+        <Stack.Screen name="Criar Conta" component={CriarConta} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
- }
+
+};
+
+export default YourApp;
