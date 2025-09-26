@@ -12,7 +12,7 @@ export default function Page() {
         <TextInput style={styles.inputEmail} placeholder={'Email'}/>
         <TextInput style={styles.inputSenha} placeholder={'Senha'} secureTextEntry={true}/></View>
 
-         <TouchableOpacity style={styles.button} onPress={() => alert("Conta criada!")}>
+         <TouchableOpacity style={styles.button} onPress={() => ("Conta criada!")}>
           <Text style={styles.buttonText}>Criar Conta</Text>
         </TouchableOpacity>
 
