@@ -1,15 +1,18 @@
 import { View, Text } from 'react-native';
 
-export default function TelaItens() {
+export default function TelaItens({ navigation }) {
     return (
         <View style={styles.container}>
+            <Text style={styles.title}>Itens</Text>
 
-                <View style={styles.view1}>
-                    <View style={styles.view2}></View>
-                    <View style={styles.view3}></View>
-                    <View style={styles.view4}></View>
-
-                </View>
-            </View>
-            );
+        <TouchableOpacity 
+         style={styles.botao}
+        onPress={() => navigation.navigate("Criar Conta")}
+        >
+        <Text style={styles.textoBotao}>Ver para Criar Conta</Text>
+        </TouchableOpacity>
+                   
+    </View>
+                    
+  );
 }

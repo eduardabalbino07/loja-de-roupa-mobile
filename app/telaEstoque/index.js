@@ -1,15 +1,19 @@
-import { StyleSheet, Text, View, TextInput} from 'react-native';
+import { Text, View, TouchableOpacity} from 'react-native';
 
-export default function TelaEstoque() {
+export default function TelaEstoque({ navigation }) {
     return (
     <View style={styles.container}>
-      <View style={styles.main}>
-       <View style={styles.title}>
         <Text style={styles.title}>Estoque</Text>
 
+      <TouchableOpacity 
+        style={styles.botao}
+        onPress={() => navigation.navigate("Itens")}
+      >
+        <Text style={styles.textoBotao}>Ver Itens</Text>
+      </TouchableOpacity>
         
-            </View>
-          </View>
-         </View>
-          );
-        }
+    </View>
+         
+    );
+  }
+

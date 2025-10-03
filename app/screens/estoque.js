@@ -4,10 +4,12 @@ export default function Estoque({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'khaki', gap: 15}}>
       <Button
-        title="Estoque"
-        onPress={() => navigation.navigate('Itens')}
+        title="Criar Conta"
+        onPress={() => navigation.navigate('Criar Conta')}
       />
-      <Button title="Voltar" onPress={() => navigation.goBack()} />
+      <Button 
+      title="Itens" 
+      onPress={() => navigation.navigate('Itens')} />
     </View>
   );
 }
